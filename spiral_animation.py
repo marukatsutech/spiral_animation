@@ -90,7 +90,7 @@ ax.set_box_aspect((2, 1, 1))
 
 # Embed a figure in canvas
 canvas = FigureCanvasTkAgg(fig, root)
-canvas.get_tk_widget().pack()
+canvas.get_tk_widget().pack(expand=True, fill='both')
 
 # Animation
 anim = animation.FuncAnimation(fig, update, interval=50)
