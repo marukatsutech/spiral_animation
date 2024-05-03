@@ -93,7 +93,7 @@ canvas = FigureCanvasTkAgg(fig, root)
 canvas.get_tk_widget().pack(expand=True, fill='both')
 
 # Animation
-anim = animation.FuncAnimation(fig, update, interval=50)
+anim = animation.FuncAnimation(fig, update, interval=50, save_count=100)
 
 # Toolbar
 toolbar = NavigationToolbar2Tk(canvas, root)
